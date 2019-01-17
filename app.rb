@@ -10,7 +10,7 @@ class App < Sinatra::Base
     original_string = params["string"] #recieved from reverse.erb
     #Instance variables allow us to bypass scope between the various methods in a class.
     #Creating an instance variable in a controller method (route) lets the contents become 'visible' to the erb file to which it renders.
-    @reversed_string = original_string.reverse
+    @reversed_string = original_string.reverse #goes to reversed.rb
 
     erb :reversed
   end
